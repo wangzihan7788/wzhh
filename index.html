@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王子涵 - 个人主页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">王子涵</div>
+      <ul class="nav-links">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#stats">数据概览</a></li>
+        <li><a href="#achievements">成就展示</a></li>
+        <li><a href="#education">教育经历</a></li>
+        <li><a href="#skills">技能特长</a></li>
+        <li><a href="#projects">项目经验</a></li>
+        <li><a href="#gallery">生活照片</a></li>
+        <li><a href="#interests">兴趣爱好</a></li>
+        <li><a href="#contact">联系我</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="avatar-wrapper">
+        <div class="avatar-glow"></div>
+        <img src="20f59bfef6859c552adbc26d650291b1.jpg" alt="王子涵" class="avatar" />
+      </div>
+      <h1>王子涵</h1>
+      <p class="subtitle">来自云南文山的阳光女孩 | 昆明学院大三学子 | 数据科学与大数据技术专业</p>
+      <p class="motto" id="motto">生活不止眼前的苟且，还有诗和远方</p>
+      
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">年龄</div>
+          <div class="value" id="age">21</div>
+        </div>
+        <div class="info-card">
+          <div class="label">籍贯</div>
+          <div class="value" id="location">云南文山</div>
+        </div>
+        <div class="info-card">
+          <div class="label">性格</div>
+          <div class="value" id="mbti">ESFP</div>
+        </div>
+        <div class="info-card">
+          <div class="label">学历</div>
+          <div class="value" id="grade">大三</div>
+        </div>
+        <div class="info-card">
+          <div class="label">学校</div>
+          <div class="value" id="school">昆明学院</div>
+        </div>
+        <div class="info-card">
+          <div class="label">专业</div>
+          <div class="value" id="major">数据科学与大数据技术</div>
+        </div>
+        <div class="info-card">
+          <div class="label">高中</div>
+          <div class="value" id="highSchool">文山市一中</div>
+        </div>
+        <div class="info-card">
+          <div class="label">联系方式</div>
+          <div class="value" id="phone">13619468369</div>
+        </div>
+      </div>
+
+      <a href="https://www.kmu.edu.cn" target="_blank" class="school-link">访问昆明学院官网</a>
+    </div>
+  </section>
+
+  <section id="stats" class="stats-section">
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-value" id="stat-achievements">5</div>
+        <div class="stat-label">获得成就</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-skills">8</div>
+        <div class="stat-label">技能掌握</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-projects">3</div>
+        <div class="stat-label">项目经验</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-volunteer">200</div>
+        <div class="stat-label">志愿时长(h)</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="achievements-section">
+    <h2 class="section-title">🏆 我的成就</h2>
+    <div class="achievements-grid" id="achievements-container"></div>
+  </section>
+
+  <section id="education" class="education-section">
+    <h2 class="section-title">📚 教育经历</h2>
+    <div class="timeline" id="timeline-container"></div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <h2 class="section-title">💡 技能特长</h2>
+    <div class="skills-container" id="skills-container"></div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">💻 项目经验</h2>
+    <div class="projects-grid" id="projects-container"></div>
+  </section>
+
+  <section id="gallery" class="gallery-section">
+    <h2 class="section-title">📸 个人生活</h2>
+    <div class="gallery-grid" id="gallery-container"></div>
+  </section>
+
+  <section id="interests" class="interests-section">
+    <h2 class="section-title">🎨 兴趣爱好</h2>
+    <div class="interests-container" id="interests-container"></div>
+  </section>
+
+  <section class="quotes-section">
+    <div class="quote-container">
+      <p class="quote" id="quote">数据是新时代的石油，而我想成为一名优秀的数据勘探者。</p>
+      <p class="quote-author">— 王子涵</p>
+      <div class="quote-nav">
+        <button class="quote-btn" id="prev-quote">‹</button>
+        <button class="quote-btn" id="next-quote">›</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="" alt="" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+      <button class="lightbox-close" id="lightbox-close">×</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev">‹</button>
+      <button class="lightbox-nav lightbox-next" id="lightbox-next">›</button>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>关于我</h4>
+        <p id="bio">我是一个热爱生活、充满活力的ESFP女孩，来自美丽的云南文山。目前就读于昆明学院数据科学与大数据技术专业，对数据领域充满热情，乐于探索新技术。</p>
+      </div>
+      <div class="footer-section">
+        <h4>快速链接</h4>
+        <ul>
+          <li><a href="#home">🏠 首页</a></li>
+          <li><a href="#achievements">🏆 成就展示</a></li>
+          <li><a href="#credits">📊 学分成绩</a></li>
+          <li><a href="#education">📚 教育经历</a></li>
+          <li><a href="#gallery">📸 生活照片</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>联系信息</h4>
+        <ul>
+          <li>📱 手机：13619468369</li>
+          <li>✉️ 邮箱：<a href="mailto:wangzihan@example.com">wangzihan@example.com</a></li>
+          <li>📍 籍贯：云南文山</li>
+          <li>🏛️ 学校：<a href="https://www.kmu.edu.cn" target="_blank">昆明学院</a></li>
+          <li>🎓 专业：数据科学与大数据技术</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>相关链接</h4>
+        <ul>
+          <li><a href="https://www.kmu.edu.cn" target="_blank">🏛️ 昆明学院官网</a></li>
+          <li><a href="https://www.baidu.com" target="_blank">🔍 百度搜索</a></li>
+          <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+          <li><a href="https://www.python.org" target="_blank">🐍 Python官网</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 王子涵 版权所有 | 用爱心和热情打造 | <a href="https://www.kmu.edu.cn" target="_blank">昆明学院</a></p>
+    </div>
+  </footer>
+
+  <script>
+    let photos = [];
+    let currentPhotoIndex = 0;
+
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('age').textContent = data.personalInfo.age;
+        document.getElementById('location').textContent = data.personalInfo.location;
+        document.getElementById('mbti').textContent = data.personalInfo.mbti;
+        document.getElementById('grade').textContent = data.personalInfo.grade;
+        document.getElementById('school').textContent = data.personalInfo.school;
+        document.getElementById('major').textContent = data.personalInfo.major;
+        document.getElementById('highSchool').textContent = data.personalInfo.highSchool;
+        document.getElementById('phone').textContent = data.personalInfo.phone;
+        document.getElementById('motto').textContent = data.personalInfo.motto;
+        document.getElementById('bio').textContent = data.personalInfo.bio;
+
+        document.getElementById('stat-achievements').textContent = data.stats.achievements;
+        document.getElementById('stat-skills').textContent = data.stats.skills;
+        document.getElementById('stat-projects').textContent = data.stats.projects;
+        document.getElementById('stat-volunteer').textContent = data.stats.volunteerHours;
+
+        const achievementsContainer = document.getElementById('achievements-container');
+        data.achievements.forEach(achievement => {
+          const categoryClass = achievement.category === '学业成就' ? 'academic' :
+                               achievement.category === '学科竞赛' ? 'competition' :
+                               achievement.category === '荣誉称号' ? 'honor' :
+                               achievement.category === '社会实践' ? 'social' : 'certificate';
+          
+          const card = document.createElement('div');
+          card.className = `achievement-card ${categoryClass}`;
+          let imageHtml = '';
+          if (achievement.image) {
+            imageHtml = `<img src="${achievement.image}" alt="${achievement.title}" style="width: 100%; height: 150px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;" />`;
+          }
+          card.innerHTML = `
+            <div class="achievement-header">
+              <span class="achievement-icon">${achievement.icon}</span>
+              <span class="category ${categoryClass}">${achievement.category}</span>
+            </div>
+            ${imageHtml}
+            <h3>${achievement.title}</h3>
+            <p>${achievement.description}</p>
+            <div class="date">📅 ${achievement.date}</div>
+          `;
+          achievementsContainer.appendChild(card);
+        });
+
+        const timelineContainer = document.getElementById('timeline-container');
+        data.education.forEach((edu, index) => {
+          const item = document.createElement('div');
+          item.className = 'timeline-item';
+          item.innerHTML = `
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">${edu.period}</div>
+              <div class="timeline-school">${edu.school}</div>
+              <div class="timeline-major">${edu.major}</div>
+              <span class="timeline-degree">${edu.degree}</span>
+              <p class="timeline-description">${edu.description}</p>
+            </div>
+          `;
+          timelineContainer.appendChild(item);
+        });
+
+        const skillsByCategory = {};
+        data.skills.forEach(skill => {
+          if (!skillsByCategory[skill.category]) {
+            skillsByCategory[skill.category] = [];
+          }
+          skillsByCategory[skill.category].push(skill);
+        });
+
+        const skillsContainer = document.getElementById('skills-container');
+        Object.keys(skillsByCategory).forEach(category => {
+          const categoryDiv = document.createElement('div');
+          categoryDiv.className = 'skill-category';
+          categoryDiv.innerHTML = `<h4>${category}</h4>`;
+          
+          skillsByCategory[category].forEach(skill => {
+            const skillItem = document.createElement('div');
+            skillItem.className = 'skill-item';
+            skillItem.innerHTML = `
+              <div class="skill-header">
+                <span class="skill-name">${skill.name}</span>
+                <span class="skill-percentage">${skill.level}%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: ${skill.level}%"></div>
+              </div>
+            `;
+            categoryDiv.appendChild(skillItem);
+          });
+          
+          skillsContainer.appendChild(categoryDiv);
+        });
+
+        const projectsContainer = document.getElementById('projects-container');
+        const projectIcons = ['📊', '🛒', '📝'];
+        data.projects.forEach((project, index) => {
+          const card = document.createElement('div');
+          card.className = 'project-card';
+          card.innerHTML = `
+            <div class="project-image">${projectIcons[index % projectIcons.length]}</div>
+            <div class="project-content">
+              <h3 class="project-title">${project.title}</h3>
+              <p class="project-description">${project.description}</p>
+              <div class="project-meta">
+                ${project.tech.map(t => `<span class="project-tag">${t}</span>`).join('')}
+              </div>
+              <div class="project-info">
+                <span>${project.date}</span>
+                <span>角色: ${project.role}</span>
+              </div>
+            </div>
+          `;
+          projectsContainer.appendChild(card);
+        });
+
+        photos = data.photos;
+        const galleryContainer = document.getElementById('gallery-container');
+        data.photos.forEach((photo, index) => {
+          const card = document.createElement('div');
+          card.className = 'gallery-card';
+          card.onclick = () => openLightbox(index);
+          card.innerHTML = `
+            <div class="gallery-image">
+              <img src="${photo.url}" alt="${photo.title}" />
+            </div>
+          `;
+          galleryContainer.appendChild(card);
+        });
+
+        const interestsContainer = document.getElementById('interests-container');
+        data.interests.forEach(interest => {
+          const tag = document.createElement('span');
+          tag.className = 'interest-tag';
+          tag.textContent = interest;
+          interestsContainer.appendChild(tag);
+        });
+
+        let quoteIndex = 0;
+        const quoteElement = document.getElementById('quote');
+        
+        document.getElementById('next-quote').addEventListener('click', () => {
+          quoteIndex = (quoteIndex + 1) % data.quotes.length;
+          quoteElement.style.opacity = 0;
+          setTimeout(() => {
+            quoteElement.textContent = data.quotes[quoteIndex];
+            quoteElement.style.opacity = 1;
+          }, 300);
+        });
+
+        document.getElementById('prev-quote').addEventListener('click', () => {
+          quoteIndex = (quoteIndex - 1 + data.quotes.length) % data.quotes.length;
+          quoteElement.style.opacity = 0;
+          setTimeout(() => {
+            quoteElement.textContent = data.quotes[quoteIndex];
+            quoteElement.style.opacity = 1;
+          }, 300);
+        });
+
+        window.addEventListener('scroll', () => {
+          const navbar = document.getElementById('navbar');
+          if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        });
+      })
+      .catch(error => console.error('Error loading data:', error));
+
+    function openLightbox(index) {
+      currentPhotoIndex = index;
+      const lightbox = document.getElementById('lightbox');
+      const image = document.getElementById('lightbox-image');
+      const caption = document.getElementById('lightbox-caption');
+      
+      image.src = photos[index].url;
+      caption.textContent = photos[index].title + ' - ' + photos[index].description;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function nextPhoto() {
+      currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+      updateLightbox();
+    }
+
+    function prevPhoto() {
+      currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+      updateLightbox();
+    }
+
+    function updateLightbox() {
+      const image = document.getElementById('lightbox-image');
+      const caption = document.getElementById('lightbox-caption');
+      
+      image.style.opacity = 0;
+      setTimeout(() => {
+        image.src = photos[currentPhotoIndex].url;
+        caption.textContent = photos[currentPhotoIndex].title + ' - ' + photos[currentPhotoIndex].description;
+        image.style.opacity = 1;
+      }, 200);
+    }
+
+    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+    document.getElementById('lightbox-prev').addEventListener('click', prevPhoto);
+    document.getElementById('lightbox-next').addEventListener('click', nextPhoto);
+
+    document.getElementById('lightbox').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('lightbox')) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (document.getElementById('lightbox').classList.contains('active')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') prevPhoto();
+        if (e.key === 'ArrowRight') nextPhoto();
+      }
+    });
+  </script>
+</body>
+</html>

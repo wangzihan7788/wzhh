@@ -1,0 +1,132 @@
+{
+  "personalInfo": {
+    "name": "王子涵",
+    "age": 21,
+    "gender": "女生",
+    "location": "云南文山",
+    "school": "昆明学院",
+    "major": "数据科学与大数据技术",
+    "grade": "大三",
+    "mbti": "ESFP",
+    "phone": "13619468369",
+    "highSchool": "文山市第一中学",
+    "schoolWebsite": "https://www.kmu.edu.cn",
+    "email": "wangzihan@example.com",
+    "bio": "我是一个热爱生活、充满活力的ESFP女孩，来自美丽的云南文山。目前就读于昆明学院数据科学与大数据技术专业，对数据领域充满热情，乐于探索新技术。我相信数据的力量可以改变世界，希望将来能成为一名优秀的数据分析师，用数据讲述故事，为决策提供有力支持。",
+    "motto": "生活不止眼前的苟且，还有诗和远方"
+  },
+  "achievements": [
+    {
+      "id": 1,
+      "title": "优秀共青团员",
+      "description": "积极参与团组织活动，热心志愿服务，累计志愿时长超过200小时，被评为昆明学院2023年度优秀共青团员。",
+      "date": "2023年5月",
+      "category": "荣誉称号",
+      "icon": "⭐"
+    },
+    {
+      "id": 2,
+      "title": "数据可视化大赛优秀奖",
+      "description": "运用Python数据分析与可视化技术，完成了关于云南省经济发展趋势的数据报告，通过精美的图表展示了云南近十年的经济变化，获得大赛优秀奖。",
+      "date": "2024年4月",
+      "category": "学科竞赛",
+      "icon": "📊"
+    },
+    {
+      "id": 3,
+      "title": "社会实践先进个人",
+      "description": "暑期参与乡村振兴社会实践活动，深入文山州农村地区进行调研，完成了关于农村电商发展现状的调查报告，被评为校级社会实践先进个人。",
+      "date": "2023年9月",
+      "category": "社会实践",
+      "icon": "🌾"
+    },
+    {
+      "id": 4,
+      "title": "华为应用开发者认证",
+      "description": "通过华为应用开发者认证考试，掌握HarmonyOS应用开发技能，能够独立开发基于华为生态的移动应用。",
+      "date": "2024年3月",
+      "category": "资格证书",
+      "icon": "📱",
+      "image": "0010086000911788131.20251217133553.18645072801553141115758000513465.jpg"
+    },
+    {
+      "id": 5,
+      "title": "二课积分优秀",
+      "description": "积极参与各类第二课堂活动，累计获得二课积分135.5分，涵盖社会实践、志愿服务、学科竞赛、文体活动等多个领域，获评校级二课积极分子。",
+      "date": "2024年",
+      "category": "综合素质",
+      "icon": "🎯",
+      "image": "f5d10d72a3fedd567c6a529e513cfda1.jpg"
+    }
+  ],
+  "skills": [
+    {"name": "Python", "level": 85, "category": "编程语言"},
+    {"name": "数据分析", "level": 80, "category": "专业技能"},
+    {"name": "数据可视化", "level": 75, "category": "专业技能"},
+    {"name": "SQL", "level": 70, "category": "数据库"},
+    {"name": "Java", "level": 65, "category": "编程语言"},
+    {"name": "Web开发", "level": 60, "category": "开发技能"},
+    {"name": "Excel高级应用", "level": 75, "category": "工具技能"},
+    {"name": "统计学", "level": 70, "category": "理论基础"}
+  ],
+  "interests": ["阅读", "旅行", "摄影", "音乐", "户外运动", "烘焙", "绘画"],
+  "education": [
+    {"period": "2021年9月 - 至今", "school": "昆明学院", "major": "数据科学与大数据技术", "degree": "本科", "description": "主修课程：数据结构、数据库原理、Python编程、机器学习、数据挖掘、统计学、数据可视化等"},
+    {"period": "2018年9月 - 2021年6月", "school": "文山市第一中学", "major": "理科", "degree": "高中", "description": "担任班级学习委员，多次获得校级三好学生称号"},
+    {"period": "2015年9月 - 2018年6月", "school": "文山第四中学", "major": "理科", "degree": "初中", "description": "担任班级学习委员，成绩优异，多次获得优秀班干部称号"}
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "云南省经济数据可视化分析",
+      "description": "运用Python的Pandas、Matplotlib、Seaborn等库对云南省近十年的经济数据进行清洗、分析和可视化展示，制作了交互式数据报告。",
+      "tech": ["Python", "Pandas", "Matplotlib", "Seaborn"],
+      "date": "2024年3月",
+      "role": "项目负责人"
+    },
+    {
+      "id": 2,
+      "title": "校园二手交易平台",
+      "description": "参与开发校园二手交易平台的后端系统，负责数据库设计和API接口开发，实现了商品发布、搜索、交易等核心功能。",
+      "tech": ["Java", "Spring Boot", "MySQL", "Redis"],
+      "date": "2023年11月",
+      "role": "后端开发"
+    },
+    {
+      "id": 3,
+      "title": "学生成绩分析系统",
+      "description": "开发学生成绩分析系统，实现成绩录入、统计分析、可视化展示等功能，帮助教师快速掌握学生学习情况。",
+      "tech": ["Python", "Django", "SQLite", "ECharts"],
+      "date": "2023年6月",
+      "role": "全栈开发"
+    }
+  ],
+  "photos": [
+    {
+      "url": "wzh/2582174ef7873123e1eb9df2afb04044.jpg"
+    },
+    {
+      "id": 2,
+      "url": "wzh/8d41d7bcfd1dff3a1db9dd53149288a0.jpg"
+    },
+    {
+      "id": 3,
+      "url": "wzh/85bf667281d68847a3bffe810a220c16.jpg"
+    },
+    {
+      "id": 4,
+      "url": "wzh/cc57734453d08805333eb63a96cfaa12.jpg"
+    }
+  ],
+  "stats": {
+    "achievements": 5,
+    "skills": 8,
+    "projects": 3,
+    "volunteerHours": 200
+  },
+  "quotes": [
+    "数据是新时代的石油，而我想成为一名优秀的数据勘探者。",
+    "每一个数据点背后都有一个故事，等待我们去发现。",
+    "生活的美好在于不断探索，技术的魅力在于不断创新。"
+  ]
+}
